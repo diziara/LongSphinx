@@ -1,4 +1,4 @@
-colors:
+root:
 - purple
 - green
 - blue
@@ -29,7 +29,6 @@ colors:
 - bright green
 - maroon
 - olive
-- salmon
 - beige
 - royal blue
 - navy blue

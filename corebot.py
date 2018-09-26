@@ -1,22 +1,21 @@
 # GENERAL TODOs WITHOUT A PLACE TO LIVE:
-# - start on boot? (https://www.raspberrypi.org/forums/viewtopic.php?t=66206#p485866 ?)
 # - write uncaught exceptions to log (instead of stderr)
 # - change conf through chat?
 #    - add/remove roles
 # - fortune?
 # - !help
+# - Respond to mentions?
+# - respond to thanks?
 
 import discord
 import random
 import yaml
 import logging
-logging.basicConfig(filename='ubeast.log',level=logging.DEBUG)
+logging.basicConfig(filename='logs/ubeast.log',level=logging.DEBUG)
 
 log = logging.getLogger('LongSphinx')
 
-import namegen
-import wandgen
-import companiongen
+import generator
 import botconfig as conf
 import botdice as dice
 
@@ -46,28 +45,28 @@ async def on_message(message):
 			# Generate random fantasy name
 			await gen_name(message)
 
-		if message.content.startswith('!role'):
+		elif message.content.startswith('!role'):
 			# Role requests
 			await request_role(message)
 
-		if message.content.startswith('!list'):
+		elif message.content.startswith('!list'):
 			await list_roles(message)
 
-		if message.content.startswith('!roll'):
+		elif message.content.startswith('!roll'):
 			#dice
 			await roll_dice(message)
 
-		if message.content.startswith('!rerole'):
+		elif message.content.startswith('!rerole'):
 			await rerole(message)
 
-		if message.content.startswith('!wand'):
-			await gen_wand(message)
-
-		if message.content.startswith('!summon'):
-			await gen_companion(message)
-
-		if message.content.startswith('!readme'):
+		elif message.content.startswith('!readme'):
 			await give_help(message)
+
+		elif message.content.startswith('&join'):
+			await on_member_join(message.author)
+		
+		elif message.content.startswith('!'):
+			await generate(message)
 
 @client.event
 async def on_ready():
@@ -80,20 +79,18 @@ async def on_member_join(member):
 	log.debug('{0.name} joined {0.server}'.format(member))
 	role = random.choice(get_valid_role_set(member.server))
 	await change_role(member, role.name)
-	msg = conf.get_string(member.server.id, 'welcome').format(member.server, member, role, find_channel(conf.get_object(member.server.id, 'greetingChannel'), member.server))
+	msg = conf.get_string(member.server.id, 'welcome').format(member.server, member, role, find_channel(conf.get_object(member.server.id, 'defaultChannel'), member.server))
 	await client.send_message(channel, msg)
 
 async def gen_name(message):
 	msg = 'Your generated name: {0}'.format(namegen.generate_name())
 	await client.send_message(message.channel, msg)
 
-async def gen_wand(message):
-	msg = wandgen.generate_wand()
-	await client.send_message(message.channel, msg)
-
-async def gen_companion(message):
-	msg = companiongen.generate_companion()
-	await client.send_message(message.channel, msg)
+async def generate(message):
+	genname = message.content[1:] # Everything but the !
+	if genname in conf.get_object(message.server.id, 'generators'):
+		msg = generator.generate(genname)
+		await client.send_message(message.channel, msg)
 
 async def request_role(message):
 	words = message.content.split()

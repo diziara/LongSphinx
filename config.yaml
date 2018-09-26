@@ -4,8 +4,14 @@ servers:
         channels:
         - bot-commands
         - command-line
+        defaultChannel:
+          bot-commands
         greetingChannel:
           portal
+        generators:
+        - potion
+        - wand
+        - summon
         validRoles:
             Dwarf:
                 secondaryRoles:
@@ -134,7 +140,7 @@ servers:
           roleChange:
             '{0.author.mention}, you are now a {1}.'
           invalidRole:
-            '{0.author.mention}, role {1} is not on the valid list.'
+            '{0.author.mention}, role {1} is not on the valid list. Perhaps have a look at my bestiary with !list, or I can choose for you with !rerole .'
           welcome:
             'Welcome to {0.name}, {1.mention}. You seem to be a ... {2.name}, perhaps?
             
@@ -152,8 +158,14 @@ My crystal ball has been foggy of late. If I''m wrong, quest to the pinned messa
         name: test server
         channels: 
         - bot-commands
+        defaultChannel:
+          bot-commands
         greetingChannel:
           portal
+        generators:
+        - potion
+        - wand
+        - summon
         validRoles:
             Dwarf:
                 secondaryRoles:
