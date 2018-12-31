@@ -1,0 +1,275 @@
+description:
+  creates a randomly generated animal companion.
+root:
+- text: 'As you complete the summoning spell, there is a burst of {smokeColor} smoke. Once it clears, you see {core}.'
+  smokeColor: color
+  core: creature.core
+core:
+- text: '{description} with the ability to {ability}'
+  description: creature.description
+  ability: creature.ability
+description:
+- text: 'a {creatureColor} {modifier}{species}'
+  creatureColor: color
+  modifier: creature.modifier
+  species: creature.species
+modifier:
+- text: 'angelic '
+- text: 'aquatic '
+- text: 'celestial '
+- text: 'clockwork '
+- text: 'crystalline '
+- text: 'dire '
+- text: 'divine '
+- text: 'eldritch '
+- text: 'electrified '
+- text: 'epic '
+- text: 'ethereal '
+- text: 'fey '
+- text: 'fiendish '
+- text: 'flaming '
+- text: 'gently resting '
+- text: 'ghost '
+- text: 'giant '
+- text: 'gilded '
+- text: 'horned '
+- text: 'icy '
+- text: 'killer '
+- text: 'magitech '
+- text: 'man-faced '
+- text: 'mechanized '
+- text: 'metallic '
+- text: 'miniature '
+- text: 'miniature '
+- text: 'moist '
+- text: 'non-euclidean '
+- text: 'obese '
+- text: 'plantkin '
+- text: 'shimmering '
+- text: 'six-legged '
+- text: 'skeleton '
+- text: 'spectral '
+- text: 'spellwarped '
+- text: 'spiky '
+- text: 'spirit '
+- text: 'undead '
+- text: 'unladen '
+- text: 'vampire '
+- text: 'were'
+- text: 'zombie '
+species:
+- text: abomination
+  sound:
+    text: groaning
+- text: armadillo
+  sound:
+    text: squeaking
+- text: badger
+  sound:
+    text: chittering
+- text: bat
+  sound:
+    text: squeaking
+- text: bee
+  sound:
+    text: buzzing
+- text: bunny
+  sound:
+    text: squeaking
+- text: camel
+  sound:
+    text: grunting
+- text: cat
+  sound:
+    text: meowing
+- text: condor
+  sound:
+    text: snorting
+- text: dog
+  sound:
+    text: barking
+- text: duck
+  sound:
+    text: quacking
+- text: eagle
+  sound:
+    text: screeching
+- text: emu
+  sound:
+    text: grunting
+- text: ferret
+  sound:
+    text: dooking
+- text: flying squirrel
+  sound:
+    text: chittering
+- text: fox
+  sound:
+    text: mewling
+- text: gelatinous cube
+  sound:
+    text: jiggling
+- text: goat
+  sound:
+    text: bleating
+- text: goldfish
+  sound:
+    text: bubbling
+- text: hamster
+  sound:
+    text: squeaking
+- text: hawk
+  sound:
+    text: chirping
+- text: hedgehog
+  sound:
+    text: squeaking
+- text: homunculus
+  sound:
+    text: babbling
+- text: iguana
+  sound:
+    text: clicking
+- text: imp
+  sound:
+    text: cackling
+- text: jellyfish
+  sound:
+    text: squishing
+- text: koala
+  sound:
+    text: grunting
+- text: lemur
+  sound:
+    text: purring
+- text: moose
+  sound:
+    text: bellowing
+- text: otter
+  sound:
+    text: chittering
+- text: owl
+  sound:
+    text: hooting
+- text: panda
+  sound:
+    text: huffing
+- text: pegasus
+  sound:
+    text: nickering
+- text: penguin
+  sound:
+    text: calling
+- text: porg
+  sound:
+    text: squawking
+- text: pseudodragon
+  sound:
+    text: whistling
+- text: raccoon
+  sound:
+    text: trilling
+- text: scorpion
+  sound:
+    text: clacking
+- text: snake
+  sound:
+    text: hissing
+- text: spider
+  sound:
+    text: creeping
+- text: swallow
+  sound:
+    text: chirping
+- text: tribble
+  sound:
+    text: purring
+- text: turtle
+  sound:
+    text: chirping
+- text: whale
+  sound:
+    text: singing
+- text: wolf
+  sound:
+    text: howling
+- text: zebra
+  sound:
+    text: nickering
+ability:
+- text: '**[REDACTED]**'
+- text: accurately appraise the value of any piece of jewelry
+- text: become indistinguishable from stone
+- text: bite your face off
+- text: blow out up to 15 birthday candles
+- text: break the fourth wall
+- text: breathe fire
+- text: breathe lighting
+- text: breathe poison
+- text: burrow through the earth faster than you can run
+- text: carry another's heart for them so that they may never die
+- text: channel dark magicks
+- text: create a day old loaf of bread with a few notes of magical song
+- text: create illusory duplicates
+- text: create small sandstorms
+- text: detect any form of magic
+- text: detect even the smallest traces of poison
+- text: dissolve into sand
+- text: dissolve into smoke
+- text: dominate the minds of small creatures or constructs
+- text: drain strength from foes
+- text: draw nourishment from the earth
+- text: eat just about anything
+- text: eat the nightmares of others
+- text: emit a deafening shriek
+- text: emit colored flashes of light
+- text: fart in your general direction
+- text: find a needle in a haystack
+- text: find the best tacos within a day's hike
+- text: fling icicles at opponents
+- text: flip any size of pancake on the first try
+- text: float about four feet off the ground next to the sink
+- text: go hours without breathing
+- text: hide in any terrain
+- text: identify the choicest cuts of meat
+- text: leap small buildings in a single bound
+- text: learn simple spells
+- text: look directly into the sun
+- text: love unconditionally
+- text: lure predators
+- text: lure unwitting victims with a song
+- text: make a really great quesadilla
+- text: mimic any sound
+- text: negate all magic in a 10-foot radius
+- text: project the form of a spectral {creature.species}
+- text: rapidly grow vines in a 10-foot radius
+- text: regrow any limbs
+- text: release clouds of spores
+- text: roll around at the speed of sound
+- text: see a few seconds into the future
+- text: see in complete darkness
+- text: serve as a flying mount
+- text: set or break camp in mere moments
+- text: shift between dimensions
+- text: sing any song
+- text: sing songs so sad that all who hear them weep with the anguish of a thousand widows
+- text: sit uncannily still
+- text: sleep
+- text: sniff out even the smallest scraps of chocolate
+- text: soothe even the most angry beings with nothing more than a soft touch
+- text: spit a {modifier} {spitColor} fluid up to 30 feet
+  modifier: potion.modifier
+  spitColor: color
+- text: spray acid
+- text: stare into anothers soul
+- text: summon a spectral {weapon}
+  weapon: weapon.type
+- text: summon the north wind
+- text: swim in lava
+- text: teleport short distances
+- text: track foes unerringly
+- text: translate between any two languages, so long nobody present speaks either of them
+- text: wield a surprisingly large battleaxe
+- text: win any staring contest
+- text: withstand any poison
+- text: work well with others

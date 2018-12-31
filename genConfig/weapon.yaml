@@ -1,0 +1,90 @@
+root:
+- text: 'a {material} {type}'
+  material: jewelry.material
+  type: weapon.type
+- text: 'a {material} {type} engraved with elaborate patterns'
+  material: jewelry.material
+  type: weapon.type
+- text: 'a {material} {type} set with a {gem}'
+  material: jewelry.material
+  type: weapon.type
+  gem: gem
+type:
+- text: arming sword
+- text: bardiche
+- text: bardiche
+- text: baselard
+- text: battleaxe
+- text: bludgeon
+- text: bo
+- text: boar spear
+- text: boar sword
+- text: boomerang
+- text: broadaxe
+- text: broadsword
+- text: chakram
+- text: cinquedea
+- text: claymore
+- text: club
+- text: cudgel
+- text: cutlass
+- text: dagger
+- text: dirk
+- text: epee
+- text: estoc
+- text: falchion
+- text: flail
+- text: flambard
+- text: flamberge
+- text: frying pan
+- text: gladius
+- text: glaive
+- text: guisarme
+- text: halberd
+- text: hammer
+- text: handaxe
+- text: harpoon
+- text: hatchet
+- text: heading sword
+- text: hook sword
+- text: javelin
+- text: katana
+- text: khopesh
+- text: kukri
+- text: kunai
+- text: labrys
+- text: lance
+- text: longsword
+- text: mace
+- text: mattock
+- text: morning star
+- text: naginata
+- text: pickaxe
+- text: pike
+- text: pilum
+- text: pitchfork
+- text: poleaxe
+- text: quarterstaff
+- text: rapier
+- text: roundhead mace
+- text: saber
+- text: sai
+- text: scepter
+- text: scimitar
+- text: shillelagh
+- text: shuriken
+- text: sickle
+- text: sledgehammer
+- text: smallsword
+- text: spadroon
+- text: spetum
+- text: spiked gauntlet
+- text: swordstaff
+- text: throwing knife
+- text: tomahawk
+- text: tonfa
+- text: trident
+- text: war pick
+- text: warhammer
+- text: wrench
+- text: zweihander

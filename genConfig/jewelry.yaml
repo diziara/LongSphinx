@@ -1,0 +1,73 @@
+description:
+  Generates a random (potentially magical) accessory. Intended for use in a loot generator.
+root:
+- text: a {material} {article} engraved with a {modifier}{species}. When you wear it, you gain the ability to {ability}.
+  material: jewelry.material
+  article: jewelry.article
+  modifier: creature.modifier
+  species: creature.species
+  ability: creature.ability
+- text: a {material} {article} bearing a {gem}. When you wear it, you gain the ability to {ability}.
+  material: jewelry.material
+  article: jewelry.article
+  gem: gem
+  ability: creature.ability
+- text: a {material} {article} engraved with a {modifier}{species}. It seems entirely mundane.
+  material: jewelry.material
+  article: jewelry.article
+  modifier: creature.modifier
+  species: creature.species
+- text: a {material} {article} bearing a {gem}. It seems entirely mundane.
+  material: jewelry.material
+  article: jewelry.article
+  gem: gem
+- text: the {article} of {name}. When you wear it, you gain the ability to {ability}.
+  article: jewelry.article
+  name: 'mc.name'
+  ability: creature.ability
+- text: a {material} {article} engraved with the crest of {place}. When you wear it, you gain the ability to {ability}.
+  material: jewelry.material
+  article: jewelry.article
+  place: 'mc.england'
+  ability: creature.ability
+material:
+- text: gold
+- text: rose gold
+- text: white gold
+- text: silver
+- text: sterling silver
+- text: platinum
+- text: copper
+- text: bronze
+- text: brass
+- text: iron
+- text: steel
+- text: lead
+- text: tin
+- text: zinc
+- text: '{species} bone'
+  species: creature.species
+- text: '{wood} wood'
+  wood: wand.wood
+article:
+- text: ring
+- text: bracelet
+- text: crown
+- text: amulet
+- text: necklace
+- text: pendant
+- text: earring
+- text: tiara
+- text: diadem
+- text: choker
+- text: armlet
+- text: bangle
+- text: cufflink
+- text: brooch
+- text: toe ring
+- text: anklet
+- text: locket
+- text: medallion
+- text: thumb ring
+- text: signet ring
+- text: pin

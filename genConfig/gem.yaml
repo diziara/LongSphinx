@@ -1,0 +1,91 @@
+root:
+- text: '{size} {type}'
+  size: gem.size
+  type: gem.type
+- text: '{size} {type}'
+  size: gem.size
+  type: gem.type
+- text: '{size} {type} {oddity}'
+  size: gem.size
+  type: gem.type
+  oddity: gem.oddity
+size:
+- text: puny
+- text: tiny
+- text: small
+- text: fairly small
+- text: large
+- text: huge
+- text: gigantic
+type:
+- text: agate
+- text: alexandrite
+- text: amazonite
+- text: amber
+- text: amethyst
+- text: ammolite
+- text: andalusite
+- text: apatite
+- text: aquamarine
+- text: aventurine
+- text: azurite
+- text: beryl
+- text: carnelian
+- text: chalsedony
+- text: charoite
+- text: chrysoberyl
+- text: chrysocolla
+- text: chrysoprase
+- text: citrine
+- text: danburite
+- text: diamond
+- text: emerald
+- text: fire agate
+- text: fluorite
+- text: fuchsite
+- text: garnet
+- text: heliodor
+- text: hematite
+- text: howlite
+- text: iolite
+- text: kyanite
+- text: lapis lazuli
+- text: larimar
+- text: lazurite
+- text: lepidolite
+- text: malachite
+- text: moonstone
+- text: morganite
+- text: obsidian
+- text: onyx
+- text: opal
+- text: orthoclase
+- text: pearl
+- text: peridot
+- text: prasiolite
+- text: quartz
+- text: rhodonite
+- text: ruby
+- text: sapphire
+- text: scapolite
+- text: selenite
+- text: serpentine
+- text: spectrolite
+- text: sphalerite
+- text: spinel
+- text: sugilite
+- text: sunstone
+- text: tanzanite
+- text: tiger eye
+- text: topaz
+- text: tourmaline
+- text: turquoise
+- text: verdite
+- text: zircon
+oddity:
+- text: which glows with {color} light
+  color: color
+- text: with an oddly {color} tint
+  color: color
+- text: known as the Eye of {name}
+  name: 'mc.name'
